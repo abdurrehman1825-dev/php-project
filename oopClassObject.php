@@ -23,11 +23,11 @@ $newName = new Test("Abdur Rehman");
 //$newName->name = "Abdur Rehman";
 $newName->show(); */
 class Employee {
-    private $id;
-    private $name;
-    private $designation;
+    public $id;
+    public $name;
+    public $designation;
 
-    public function set_employee($id,$name,$designation){
+    public function __construct($id,$name,$designation){
         $this->id = $id;
         $this->name=$name;
         $this->designation=$designation;
@@ -38,7 +38,10 @@ class Employee {
         echo $this->designation;
     }
 }
-$zahid = new Employee();
-$zahid->set_employee(2,"zahid","system engineer");
-$zahid->get_employee();
+$zahid = new Employee(2,"zahid","system engineer");
+//$zahid->set_employee(2,"zahid","system engineer"); old code
+//$zahid->get_employee();
+foreach(get_object_vars($zahid) as $key=>$value){
+    echo "$key:$value <br/>";
+}
 ?>
