@@ -12,15 +12,15 @@ $boltair->sound="wo wo";
 var_dump($boltair) */
 
 class Test{
-    public $name;
+    public function __construct (public $name){}
 
     public function show(){
         echo $this->name;
     }
 }
 
-$newName = new Test();
-$newName->name = "Abdur Rehman";
+$newName = new Test("Abdur Rehman");
+//$newName->name = "Abdur Rehman";
 $newName->show();
 
 ?>
