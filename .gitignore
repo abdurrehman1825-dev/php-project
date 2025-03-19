@@ -1,0 +1,12 @@
+# Ignore Composer dependencies
+vendor/
+
+# Ignore Node.js dependencies (if any)
+node_modules/
+
+# Ignore environment and configuration files
+.env
+
+# Ignore logs and cache
+*.log
+*.cache
