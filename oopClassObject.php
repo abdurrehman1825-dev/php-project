@@ -39,6 +39,7 @@ class Employee {
     }
 }
 $zahid = new Employee(2,"zahid","system engineer");
+$aslam = new Employee(3,"aslam","system engineer");
 //$zahid->set_employee(2,"zahid","system engineer"); old code
 //$zahid->get_employee();
 foreach(get_object_vars($zahid) as $key=>$value){
