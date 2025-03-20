@@ -37,12 +37,15 @@ class Employee {
         echo $this->name;
         echo $this->designation;
     }
+    public function show(){
+        echo "<h1 style=color:blue> this is Employee class<h1>";
+    }
 }
-$zahid = new Employee(2,"zahid","system engineer");
-$aslam = new Employee(3,"aslam","system engineer");
+ $zahid = new Employee(2,"zahid","system engineer");
+/*$aslam = new Employee(3,"aslam","system engineer");
 //$zahid->set_employee(2,"zahid","system engineer"); old code
 //$zahid->get_employee();
 foreach(get_object_vars($zahid) as $key=>$value){
     echo "$key:$value <br/>";
-}
+} */
 ?>
