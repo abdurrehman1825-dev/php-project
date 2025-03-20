@@ -23,5 +23,6 @@ print_r($data);
     echo "Error:" .$th->getMessage();
 }
 
+phpinfo();
 
 ?>
